@@ -1,0 +1,8 @@
+.about-container{
+    height: 100vh;
+    background-color: green;
+    @include img-setting;
+    .about{
+        height: 500px;
+    }
+}

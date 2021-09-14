@@ -1,0 +1,12 @@
+.landing {
+  height: 100vh;
+  background-image: url(../img/landing-img.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .landing-text {
+    height: 500px;
+    color: $txt-color;
+    @include grid-center;
+  }
+}

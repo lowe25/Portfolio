@@ -1,0 +1,14 @@
+//Base
+@import '../scss/Base/reset';
+@import '../scss/Base/mixins';
+@import '../scss/Base/colors';
+
+//Layout
+@import '../scss/Layout/navbar';
+@import '../scss/Layout/footer';
+
+//Pages
+@import '../scss/Pages/landing';
+@import '../scss/Pages/about';
+@import '../scss/Pages/projects';
+@import '../scss/Pages/contacts';

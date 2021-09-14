@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*Text Color*/
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: crimson;
+  border-bottom: 2px solid black;
+}
+
+.navbar .company-name {
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  margin-right: auto;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar li {
+  list-style: none;
+  padding: 1rem;
+}
+
+.navbar .links {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar .links:hover {
+  color: red;
+  border-bottom: 2px solid yellow;
+}
+
+.toggle {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+}
+
+/*Media Query Mobile*/
+footer {
+  height: 70px;
+  background-color: yellow;
+}
+
+.landing {
+  height: 100vh;
+  background-image: url(../img/landing-img.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.landing .landing-text {
+  height: 500px;
+  color: #ffffff;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-container {
+  height: 100vh;
+  background-color: green;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about-container .about {
+  height: 500px;
+}
+
+.projects-container {
+  height: 100vh;
+  background-color: red;
+}
+
+.contact-container {
+  height: 100vh;
+  background-color: orange;
+}
+/*# sourceMappingURL=style.css.map */
