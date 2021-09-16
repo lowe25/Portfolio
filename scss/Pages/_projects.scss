@@ -1,4 +1,38 @@
 .projects-container{
-    height: 100vh;
-    background-color: red;
+    min-height: 500px;
+    background-color:  #2d2d2d  ;   
+    color: $txt-color;
+    font-family: $Raleway;
+    h1{
+        text-align: center;
+    }
+    .project-list{
+        height: 500px;
+        @include grid-col;
+        align-items: center;
+        gap: 15px;
+        .btn-div{
+              @include grid-col;
+              gap: 15px;
+              padding: 12px;
+        }
+    } 
+    .project{
+        height: 320px;
+        width: 500px;
+        border: 2px solid white;
+        .btn-projDemo{
+            @include proj-btn;
+        }
+        .btn-projDemo:hover{
+            background-color:#000000 ;
+            transition-duration: 1s;
+        }
+    }   
+    .technologies{
+        @include flex-setting1;
+     .prog{
+        height: 40px;
+     }
+    }     
 }

@@ -1,8 +1,45 @@
-.about-container{
-    height: 100vh;
-    background-color: green;
-    @include img-setting;
-    .about{
-        height: 500px;
+.about-container {
+  @include height;
+  background-color:#292828;
+  font-family: $Raleway;
+  color: $txt-color;
+
+  @include img-setting;
+  .about {
+    height: 400px;
+    @include flex-setting1;
+    .prof-img {
+      height: 300px;
+      border-radius: 150px;
+      padding-left: 18px;
     }
+    .desc {
+      color: $txt-color;
+      padding: 10px;
+      line-height: 1.8;
+      width: 600px;
+    }
+  }
+  .skills-container {
+    .languages {
+      @include grid-col;
+      gap: 25px;
+    }
+    .prog {
+      height: 150px;
+    }
+    .skills {
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    .credits{
+      display: grid;
+      justify-content: center;
+      padding: 30px;
+      .link{
+        text-decoration: none;
+        color: $txt-color;
+      }
+    }
+  }
 }

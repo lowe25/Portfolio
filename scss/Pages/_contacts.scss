@@ -1,4 +1,30 @@
-.contact-container{
-    height: 100vh;
-    background-color: orange;
+.contact-container {
+  height: 500px;
+  text-align: center;
+  background-color:#292828;
+  color: $txt-color;
+  .con{
+    padding: 15px;
+  }
+  .form-container {
+    @include grid-col1;
+    padding-bottom: 20px;
+    label {
+      padding: 10px;
+    }
+    .txt-email,
+    .txt-name {
+      @include txt-box1;
+    }
+    .txt-area {
+      @include text-area;
+    }
+    .btn {
+      position: relative;
+      left: 31%;
+    }
+    .btn-sub {
+      @include btn-submit;
+    }
+  }
 }

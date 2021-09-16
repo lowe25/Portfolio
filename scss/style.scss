@@ -2,7 +2,11 @@
 @import '../scss/Base/reset';
 @import '../scss/Base/mixins';
 @import '../scss/Base/colors';
+@import '../scss/Base/font';
 
+//Component
+@import '../scss/Component/buttons';
+@import '../scss/Component/textbox';
 //Layout
 @import '../scss/Layout/navbar';
 @import '../scss/Layout/footer';
