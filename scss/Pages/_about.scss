@@ -1,12 +1,12 @@
 .about-container {
   @include height;
-  background-color:#292828;
+  background-color: #292828;
   font-family: $Raleway;
   color: $txt-color;
 
   @include img-setting;
   .about {
-    height: 400px;
+    min-height: 400px;
     @include flex-setting1;
     .prof-img {
       height: 300px;
@@ -32,13 +32,53 @@
       text-align: center;
       padding-bottom: 20px;
     }
-    .credits{
+    .credits {
       display: grid;
       justify-content: center;
       padding: 30px;
-      .link{
+      .link {
         text-decoration: none;
         color: $txt-color;
+      }
+    }
+  }
+}
+
+@include mobile-device(mobile) {
+  .about-container {
+    .about {
+      @include flex-setting2;
+      .prof-img {
+        padding: 20px;
+      }
+      .desc{
+        text-align: center;
+        width: auto;
+      }
+    }
+    .skills-container {
+      .languages {
+        @include grids;
+      }
+    }
+  }
+}
+
+@include tablet-device(tablet-sm,tablet-md){
+  .about-container {
+    .about {
+      @include flex-setting2;
+      .prof-img {
+        padding: 20px;
+      }
+      .desc{
+        text-align: center;
+        width: auto;
+      }
+    }
+    .skills-container {
+      .languages {
+        @include grids;
       }
     }
   }

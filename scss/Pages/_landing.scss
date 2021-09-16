@@ -13,6 +13,9 @@
       justify-content: center;
       position: relative;
       top: 45%;
+      .landing-desc{
+        background-color: black;
+      }
     }
     .btn-intro{
       display: grid;
@@ -20,6 +23,28 @@
       padding: 25px;
       .btn-cta{
         @include btn-submit;
+      }
+    }
+  }
+}
+
+@include mobile-device(mobile){
+  .landing{
+    .landing-text{
+      text-align: center;
+      .landing-desc{
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+@include tablet-device(tablet-sm, tablet-md){
+  .landing{
+    .landing-text{
+      text-align: center;
+      .landing-desc{
+        line-height: 1.5;
       }
     }
   }

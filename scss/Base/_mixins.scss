@@ -1,5 +1,5 @@
 @mixin height{
-    height: 100vh;
+    min-height: 100vh;
 }
 @mixin img-setting {
     background-position: center;
@@ -12,6 +12,13 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 25px;
+}
+
+@mixin flex-setting2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     gap: 25px;
 }
 
@@ -30,8 +37,8 @@
     grid-template-columns: repeat(3,auto);
 }
 
-@mixin grid-col1 {
+@mixin grids {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(1,auto);
-}
+    grid-template-columns: repeat(1, auto);
+  }
