@@ -313,7 +313,7 @@ footer {
 }
 
 .projects-container .project {
-  min-height: 320px;
+  min-height: 220px;
   width: 500px;
   border: 2px solid white;
   padding: 15px;
